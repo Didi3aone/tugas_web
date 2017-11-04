@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*margin: 0;*/
+    background-image: url("../images/mbuntu-1.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 0px;
+    text-align: center;
+    border: 25px solid green;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border: 1px solid;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    border: 1px solid;
+}
+
+.column.side_right {
+    width: 25%;
+    border: 1px solid;
+    margin-right: 0px 0px;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+    border: 1px solid;
+    height: 300%;
+}
+/* Middle column */
+.menu{
+    margin-bottom: 80px;
+    width: 100%;
+    /*border: 1px solid;*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    /*padding: 10px;*/
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+        height: 200%;
+    }
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery_c {
+    margin: 5px;
+    border: 1px solid #ccc;
+    /*float: left;*/
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+#/*content-slider {
+position:relative;
+overflow:hidden; /*agar posisi gambar tetap rapih*/
+width:950px
+}
+ 
+/* fungsinya untuk mmengatur ukuran gambar di browser yang di gunakan*/
+#slideshow {
+width: 1000%;
+-webkit-animation: slideshow 10s infinite; /* For Safari 5, Chrome*/
+-moz-animation: slideshow 10s infinite; /*For Firefox 5+ */
+-ms-animation: slideshow 10s infinite; /*For IE 10 */
+-o-animation: slideshow 10s infinite; /* For Opera 12+*/
+}
+ 
+#slideshow img{
+float:left /*agar posisi gambar menjadi horizontal*/
+}
