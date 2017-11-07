@@ -55,11 +55,31 @@
 			<p id="demo" class="text"></p>
 		</div>
 	</div>
-
-	<div class="row">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126927.95703156911!2d106.77242485265685!3d-6.197748705211061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e03dec2a2f9%3A0xc238612f0d32e93f!2sXis+Karaoke+Alexis!5e0!3m2!1sid!2sid!4v1509761077338" width="700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="row">
+	<div class="column side_right">
+	<div class="form">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="email" name="email" id="email" />
+			</div>
+			<div>
+				<label>Alamat:</label>
+				<textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Kirim" class="tombol">
+			</div>
+		</form>
+	</div>
+	</div>
+	<div class="row pull-right">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126927.95703156911!2d106.77242485265685!3d-6.197748705211061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e03dec2a2f9%3A0xc238612f0d32e93f!2sXis+Karaoke+Alexis!5e0!3m2!1sid!2sid!4v1509761077338" width="700" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div> 
-	<div class="column side" style="background-color:#aaa;">
 
 	</div>
 	<div style="height: 400px">
@@ -68,6 +88,21 @@
 		<div class="pull-right"><p style="color: blue; margin-right: 10px;"> &copy; copyright. POJOKAN KANTIN LEMAH</p></div>
 	</div>
 
-	<script src="js/efect.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var alamat = document.getElementById("alamat").value;
+		if (nama != "" && email!="" && alamat !="") {
+			alert('Terima kasih telah menghubungi kami');
+			consol.log(nama);
+			consol.log(alamat);
+			consol.log(email);
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
 </body>
 </html>

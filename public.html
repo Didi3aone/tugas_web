@@ -4,6 +4,7 @@
 	<title>Never Quit Ecommerce</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/images (2).jpg">
 	<link rel="stylesheet" href="css/style.css">
 	<style>
 		.text {
@@ -14,6 +15,12 @@
 			text-align:  center;
 			width :30%;
 			height : 40%;
+		}
+		.img-circle {
+			border-radius: 50%;
+			float: left;
+			height: 57%;
+			width: 5%;
 		}
 	</style>
 </head>
@@ -35,6 +42,7 @@
 					</ul>
 				</li>
 				<li><a href="about.html">About</a></li>
+				<li><a href="about.html">Pelayanan</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
@@ -44,7 +52,7 @@
 	<div class="row">
 		<!-- <div class="menu" style="background-color:#aaa;" > -->
 		<!-- ini untuk video -->
-		<video controls autoplay style="height: 150px;" class="pull-right">
+		<video controls style="height: 150px;" class="pull-right">
 			<source src="video/neverquit.mp4" type="video/mp4">
 				<source src="movie.ogg" type="video/ogg">
 					Your browser does not support the video tag.
@@ -55,7 +63,7 @@
 				</div>
 				<!-- </div> -->
 				<div>
-					<p id="demo" class="text pull-right"></p>
+					<p id="demo" class="text pull-right"><div id=”waktu”></div></p>
 				</div>
 			</div>
 
@@ -85,82 +93,85 @@
 					<div class="fb-page" data-href="https://www.facebook.com/neverquit11/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/neverquit11/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/neverquit11/">Never Quit</a></blockquote></div>
 				</div>
 				<!-- kolom untuk gambar di menu utama -->
-				<div class="column tengah" style="background-color:#000066;">
-				<p>Gallery NEVER QUIT CELLULER</p>
+				<div class="column tengah">
+					<!-- <p>Gallery NEVER QUIT CELLULER</p> -->
 					<div class="gallery">
-						<a target="_blank" href="images/1.jpg">
-							<img src="images/1.jpg" alt="Fjords" width="300" height="200">
+						<a href="images/1.jpg" target="_blank">
+							<img src="images/1.jpg" alt="Never Quit" width="300" height="200">
 						</a>
-						<div class="desc">Add a description of the image here</div>
+						<div class="desc">Produk Mahal</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 
 					<div class="gallery">
-						<a target="_blank" href="images/2.jpg">
-							<img src="images/2.jpg" alt="Forest" width="300" height="200">
-						</a>
-						<div class="desc">Add a description of the image here</div>
+						<img id="myImg" src="images/2.jpg" alt="Never Quit" width="300" height="200">
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+
+							<!-- The Close Button -->
+							<span class="close">&times;</span>
+
+							<!-- Modal Content (The Image) -->
+							<img class="modal-content" id="img02">
+
+							<!-- Modal Caption (Image Text) -->
+							<div id="caption">Unlimited</div>
+						</div>
+
+						<div class="desc">Produk Mahal</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 
 					<div class="gallery">
-						<a target="_blank" href="images/3.jpg">
-							<img src="images/3.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img id="myImg" src="images/3.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<!-- ok -->
 					<div class="gallery">
-						<a target="_blank" href="images/5.jpg">
-							<img src="images/5.jpg" alt="Forest" width="500" height="200"> 
-						</a>
+						<img id="myImg" src="images/5.jpg" alt="Forest" width="500" height="200"> 
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div> <br>
 					<div class="gallery">
-						<a target="_blank" href="images/6.jpg">
-							<img src="images/6.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img id="myImg" src="images/6.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<div class="gallery">
-						<a target="_blank" href="images/7.jpg">
-							<img src="images/7.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img src="images/7.jpg" id="myImg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<div class="gallery">
-						<a target="_blank" href="images/8.jpg">
-							<img src="images/8.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img id="myImg" src="images/8.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<div class="gallery">
-						<a target="_blank" href="images/9.jpg">
-							<img src="images/9.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img id="myImg" src="images/9.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div> <br>
 					<div class="gallery">
-						<a target="_blank" href="images/10.jpg">
-							<img src="images/10.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img  id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<div class="gallery">
-						<a target="_blank" href="images/10.jpg">
-							<img src="images/10.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<div class="gallery">
-						<a target="_blank" href="images/10.jpg">
-							<img src="images/10.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<div class="gallery">
-						<a target="_blank" href="images/10.jpg">
-							<img src="images/10.jpg" alt="Forest" width="300" height="200">
-						</a>
+						<img  id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
 						<div class="desc">Add a description of the image here</div>
+						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 				</div>
 				<!-- end kolom gambar -->
@@ -177,6 +188,8 @@
 			</div>
 			<!-- end slide -->
 			<div class="footer">
+				<img src="images/images.jpg" class="img-circle tooltip" alt=""> &nbsp; &nbsp;
+				<img src="images/images (1).jpg" class="img-circle" alt="">
 				<div class="pull-right"><p style="color: blue; margin-right: 10px;"> &copy; copyright. POJOKAN KANTIN LEMAH</p></div>
 			</div>
 
@@ -189,5 +202,9 @@
 				js.src = 'https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.10';
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
+
+			<script>
+
+			</script>
 		</body>
 		</html>

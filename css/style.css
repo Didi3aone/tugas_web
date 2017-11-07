@@ -10,6 +10,12 @@ body {
     background-attachment: fixed;
 }
 
+a.text-tengah {
+    padding: 64px;
+    text-align: center;
+    color: white;
+}
+
 .nav ul {
   list-style: none;
   background-color: #444;
@@ -84,7 +90,25 @@ body {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    border-bottom: 1px dotted black;
+}
+
+img.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 /* Style the header */
@@ -100,29 +124,35 @@ body {
     float: left;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
-    border: 1px solid;
+    /*border: 1px solid;*/
 }
 
 /* Left and right column */
 .column.side {
     width: 25%;
-    border: 1px solid;
-    padding: 0%;
+    /*border: 1px solid;*/
+    padding: 1%;
+    margin-right: 1%;
 }
 
 .column.side_right {
-    width: 25%;
-    border: 1px solid;
-    margin-right: 0px 0px;
+    width: 48%;
+    height: 500px;
+    /*border: 1px solid;*/
+    margin-right: 0px;
+    margin-left: 0%;
 }
 
 /* Middle column */
 .column.tengah {
     /*margin-top: 1%;*/
     width: 60%;
-    border: 1px solid;
+    /*border: 1px;*/
     height: 300%;
-    padding: 7%;
+    /*padding: 7%;*/
+    margin-right: 1%;
+    margin-bottom: 0px;
+    position: relative;
 }
 /* Middle column */
 .menu{
@@ -159,13 +189,16 @@ body {
         height: 200%;
     }
 }
-
+/*posisi menu utama gallery foto*/
 div.gallery {
     margin: 5px;
-    border: 1px solid #ccc;
+    border: 1px #ccc;
     float: left;
     width: 180px;
-    margin-top: 1%;
+    margin-top: 0%;
+    /*margin-right: 0%;*/
+    margin-left: 8.1%;
+    position: center;
 }
 
 div.gallery_c {
@@ -187,8 +220,10 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+    color: white;
 }
-
+/*end*/
+/*table*/
 table {
     width: 100%;
     border: 1px solid;
@@ -205,4 +240,125 @@ td {
     vertical-align: bottom;
     background-color: red;
     /*text-decoration-color: white;*/
+}
+/*end*/
+/*form input contact*/
+.form {
+  padding: 1em;
+  margin: 2em auto;
+  width: 17em;
+  background: #fff;
+  border-radius: 3px;
+  width: 90%;
+  height: 70%;
+}
+ 
+label {
+  font-size: 10pt;
+  color: #555;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  width: 95%;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
+ 
+.tombol {
+  background: #3498db;
+  color: #fff;
+  border: 0;
+  padding: 5px 8px;
+}
+/*end form*/
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
