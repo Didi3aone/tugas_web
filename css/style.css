@@ -1,7 +1,7 @@
 /** {
     box-sizing: border-box;
 }*/
-
+/*style untuk body dan header*/
 body {
     /*margin: 0;*/
     background-image: url("../images/mbuntu-2.jpg");
@@ -17,9 +17,17 @@ a.text-tengah {
     color: white;
 }
 
+/* Style the header */
+.header {
+    /*background-color: #0D0DFF;*/
+    padding: 0px;
+    text-align: center;
+    border: 25px solid blue;
+}
+
 .nav ul {
   list-style: none;
-  background-color: #1F8F5C;
+  background-color:  #FF3300;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -93,32 +101,9 @@ a.text-tengah {
     display: inline-block;
     border-bottom: 1px dotted black;
 }
+/*end style body*/
 
-img.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-/* Style the header */
-.header {
-    /*background-color: #0D0DFF;*/
-    padding: 0px;
-    text-align: center;
-    border: 25px solid blue;
-}
+/*style untuk coloum side & tengah */
 
 /* Create three unequal columns that floats next to each other */
 .column {
@@ -150,28 +135,69 @@ img.tooltip .tooltiptext {
     width: 60%;
     /*border: 1px;*/
     height: 300%;
+    /*padding: 10px;*/
+    margin-right: 1%;
+    margin-bottom: 0px;
+    /*position: relative;*/
+}
+/* Kolom untuk accesoris */
+.column.accesories {
+    /*margin-top: 1%;*/
+    width: 100%;
+    /*border: 1px;*/
+    height: 300%;
     /*padding: 7%;*/
     margin-right: 1%;
     margin-bottom: 0px;
     position: relative;
 }
-/* Middle column */
+
 .menu{
     margin-bottom: 20px;
     width: 60%;
     /*border: 1px solid;*/
 }
 
-/* Clear floats after the columns */
+/*img.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;*/
+
+    /* Position the tooltip */
+/*    position: absolute;
+    z-index: 1;
+}*/
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+        height: 200%;
+    }
+}
+
+/*end style kolom*/
+
+/* style row untuk membuat baris baru*/
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
+/*end class*/
+/*style posisi pull kanan*/
 .pull-right {
   float: right !important;
 }
+/*end*/
 
 /* Style the footer */
 .footer {
@@ -182,18 +208,13 @@ img.tooltip .tooltiptext {
     height: 60px;
     border: 25px solid blue;
 }
+/*end footer*/
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .column.side, .column.middle {
-        width: 100%;
-        height: 200%;
-    }
-}
+
 /*posisi menu utama gallery foto*/
 div.gallery {
     margin: 5px;
-    border: 1px #ccc;
+    /*border: 1px #ccc;*/
     float: left;
     width: 180px;
     margin-top: 0%;
@@ -205,13 +226,10 @@ div.gallery {
 div.gallery_c {
     margin: 5px;
     border: 1px solid #ccc;
-    /*float: left;*/
+    float: left;
     width: 180px;
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
 
 div.gallery img {
     width: 100%;
@@ -223,7 +241,8 @@ div.desc {
     text-align: center;
     color: white;
 }
-
+/*end*/
+/*ini image untuk about*/
 .img-circle {
       border-radius: 50%;
       float: left;
@@ -269,6 +288,13 @@ div p {
    font-size: 15px;
 
 }
+.text-desc {
+  color: white;
+}
+.p {
+  font-size: 40px;
+  color:white;
+}
 
 /* Left and right column */
 .posisi-tengah {
@@ -285,10 +311,10 @@ div p {
       height: 50%;
       width: 2.4%;
     }
-
+/*end*/
 
 /*end*/
-/*table*/
+/*table style*/
 table {
     width: 100%;
     border: 1px solid;
@@ -306,6 +332,7 @@ td  {
     background-color: red;
     /*text-decoration-color: white;*/
 }
+/*table data harga*/
 .table-data-harga {
   width: 300%;
   margin-top: 0px;
@@ -315,8 +342,8 @@ td  {
 .text-data-harga {
   color: white;
 }
-/*end*/
-/*form input contact*/
+/*end table*/
+/*style form input contact*/
 .form {
   padding: 1em;
   margin: 2em auto;
@@ -324,7 +351,42 @@ td  {
   background: #fff;
   border-radius: 3px;
   width: 90%;
-  height: 70%;
+  height: 87%;
+}
+ 
+label {
+  font-size: 10pt;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  width: 95%;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+}
+ 
+.tombol {
+  background: #3498db;
+  color: #fff;
+  border: 0;
+  padding: 5px 8px;
+}
+/*end form*/
+
+/*style form input pembelian*/
+.form-pembelian {
+  padding: 1em;
+  margin: 2em auto;
+  width: 17em;
+  background: #fff;
+  border-radius: 3px;
+  width: 90%;
+  height: 100%;
 }
  
 label {

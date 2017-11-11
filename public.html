@@ -31,6 +31,7 @@
 	</style>
 </head>
 <body>
+	<!-- header -->
 	<div class="header">
 		<div class="nav">
 			<ul>
@@ -48,137 +49,112 @@
 					</ul>
 				</li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="about.html">Pelayanan</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
+	<!-- end header -->
+	<!-- slide text -->
 	<marquee behavior="" direction=""><p class="text">Selamat Datang di Website Penjualan "NEVER QUIT CELL"</p></marquee>
 	<br>
+	<!-- end slide  -->
 	<div class="row">
-		<!-- <div class="menu" style="background-color:#aaa;" > -->
 		<!-- ini untuk video -->
 		<video controls style="height: 150px;" class="pull-right">
 			<source src="video/neverquit.mp4" type="video/mp4">
-				<source src="movie.ogg" type="video/ogg">
-					Your browser does not support the video tag.
-				</video>
-				<!-- end video -->
-					<p id="demo" class="text pull-right">
-						<div id=”waktu”></div>
-					</p>
-				<div style="width: 100%">
-					<img src="images/back.jpg" class="img-logo" height="10" alt="Never Quit">
-				</div>
-				
-				<!-- </div> -->
-			</div>
-
-			<div class="row">
-				<div class="column side" style="background-color:#D9FFCC;">
-					<i>Daftar Handphone Best Seller Bulan Ini</i>
-					<table border="1">
-						<tr>
-							<th>No</th>
-							<th>Produk</th>
-							<th>Kondisi</th>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Xiaomi Redmi 3</td>
-							<td>Baru</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Samsung J5 Pro</td>
-							<td>Baru</td>
-						</tr>
-					</table>
+			<source src="movie.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+		</video>
+		<!-- end video -->
+		
+		<!-- untuk menampilkan tanggal dari javascript yang sudah di definisikan dengan ID -->
+		<p id="demo" class="text pull-right">
+			<div id=”waktu”></div>
+		</p>
+		<!-- end tanggal -->
+		
+		<!-- logo -->
+		<div style="width: 100%">
+			<img src="images/back.jpg" class="img-logo" height="10" alt="Never Quit">
+		</div>
+		<!-- end logo -->				
+	</div>
+        <!-- buat baris baru untuk menampilkan side dan menu -->
+		<div class="row">
+			<div class="column side" style="background-color:#D9FFCC;">
+				<i>Daftar Handphone Best Seller Bulan Ini</i>
+				<table border="1">
+					<tr>
+						<th>No</th>
+						<th>Produk</th>
+						<th>Kondisi</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Xiaomi Redmi 3</td>
+						<td>Baru</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Samsung J5 Pro</td>
+						<td>Baru</td>
+					</tr>
+				</table>
 					Note : <i> Produk update berdasarkan realease product.</i>
-					<p style="margin-bottom:10px;"> <strong> Like Time Line kami ya guys</p></strong>
-					<div style="height: 40%;"></div>
-					<div class="fb-page" data-href="https://www.facebook.com/neverquit11/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/neverquit11/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/neverquit11/">Never Quit</a></blockquote></div>
-				</div>
+				<p style="margin-bottom:10px;"> <strong> Like & kunjungi Time Line kami</p></strong>
+				<!-- ini untuk inisial agar tidak bug penempatan -->
+				<div style="height: 40%;"></div>
+				<!-- end -->
+				<!-- load plugin facebook -->
+				<div class="fb-page" data-href="https://www.facebook.com/neverquit11/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/neverquit11/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/neverquit11/">Never Quit</a></blockquote></div>
+				<!-- end load -->
+			</div>
 				<!-- kolom untuk gambar di menu utama -->
 				<div class="column tengah">
-					<!-- <p>Gallery NEVER QUIT CELLULER</p> -->
 					<div class="gallery">
 						<a href="images/1.jpg" target="_blank">
 							<img src="images/1.jpg" alt="Never Quit" width="300" height="200">
 						</a>
 						<div class="desc">Produk Mahal</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
+						<a href="form.html" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 
 					<div class="gallery">
-						<img id="myImg" src="images/2.jpg" alt="Never Quit" width="300" height="200">
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img02">
-
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Unlimited</div>
-						</div>
-
-						<div class="desc">Produk Mahal</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
-					</div>
-
-					<div class="gallery">
-						<img id="myImg" src="images/3.jpg" alt="Forest" width="300" height="200">
+						<a href="images/2.jpg" target="_blank">
+							<img src="images/2.jpg" alt="Never Quit" width="300" height="200">
+						</a>
 						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
+						<a href="form.html" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
+					</div>
+
+					<div class="gallery">
+						<a href="images/3.jpg" target="_blank">
+							<img src="images/3.jpg" alt="Never Quit" width="300" height="200">
+						</a>
+						<div class="desc">Add a description of the image here</div>
+						<a href="form.html" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<!-- ok -->
 					<div class="gallery">
-						<img id="myImg" src="images/5.jpg" alt="Forest" width="500" height="200"> 
+						<a href="images/5.jpg" target="_blank">
+							<img src="images/5.jpg" alt="Never Quit" width="300" height="200">
+						</a> 
 						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
+						<a href="form.html" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div> <br>
 					<div class="gallery">
-						<img id="myImg" src="images/6.jpg" alt="Forest" width="300" height="200">
+						<a href="images/6.jpg" target="_blank">
+							<img src="images/6.jpg" alt="Never Quit" width="300" height="200">
+						</a>
 						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
+						<a href="form.html" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 					<div class="gallery">
-						<img src="images/7.jpg" id="myImg" alt="Forest" width="300" height="200">
+						<a href="images/7.jpg" target="_blank">
+							<img src="images/7.jpg" alt="Never Quit" width="300" height="200">
+						</a>
 						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
-					</div>
-					<div class="gallery">
-						<img id="myImg" src="images/8.jpg" alt="Forest" width="300" height="200">
-						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
-					</div>
-					<div class="gallery">
-						<img id="myImg" src="images/9.jpg" alt="Forest" width="300" height="200">
-						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
-					</div> <br>
-					<div class="gallery">
-						<img  id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
-						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
-					</div>
-					<div class="gallery">
-						<img id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
-						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
-					</div>
-					<div class="gallery">
-						<img id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
-						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
-					</div>
-					<div class="gallery">
-						<img  id="myImg" src="images/10.jpg" alt="Forest" width="300" height="200">
-						<div class="desc">Add a description of the image here</div>
-						<a href="" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
+						<a href="form.html" class="text-tengah" target="_blank"> <b>Beli Produk</b></a>
 					</div>
 				</div>
 				<!-- end kolom gambar -->
@@ -187,12 +163,18 @@
 			<br><br><br>
 			<!-- slide gambar menggunakan marquee -->
 			<div style="height: 200px">
-
 				<marquee behavior="" direction="">
-					<img src="images/10.jpg" alt="" width="300" height="100"> &nbsp; &nbsp; &nbsp;
-					<img src="images/10.jpg" alt="" width="300" height="100">
+					<img src="images/10.jpg" alt="" width="400" height="200"> &nbsp; &nbsp; &nbsp;
+					<img src="images/10.jpg" alt="" width="400" height="200"> &nbsp; &nbsp; &nbsp;
+					<img src="images/10.jpg" alt="" width="400" height="200"> &nbsp; &nbsp; &nbsp;
+					<img src="images/10.jpg" alt="" width="400" height="200"> &nbsp; &nbsp; &nbsp;
+					<img src="images/10.jpg" alt="" width="400" height="200"> &nbsp; &nbsp; &nbsp;
+					<img src="images/10.jpg" alt="" width="400" height="200"> &nbsp; &nbsp; &nbsp;
+					<img src="images/10.jpg" alt="" width="400" height="200"> &nbsp; &nbsp; &nbsp;
+					<img src="images/10.jpg" alt="" width="400" height="200"> 
 				</marquee>
 			</div>
+			<br>
 			<!-- end slide -->
 			<div class="footer">
 				<img src="images/images.jpg" class="img-circle tooltip" alt=""> &nbsp; &nbsp;

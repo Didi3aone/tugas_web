@@ -10,15 +10,6 @@
 			color:white;
 			font-size: 25px;
 		}
-
-		.image_posisi {
-			text-align:  center;
-			width :30%;
-			height : 40%;
-		}
-		.posisi {
-
-		}
 	</style>
 </head>
 <body>
@@ -34,7 +25,7 @@
 				</li>
 				<li class="news"><a href="#"> Daftar Harga </a>
 					<ul>
-						<li><a href="data-hp"> Handphone </a></li>
+						<li><a href="data-hp.html"> Handphone </a></li>
 						<li><a href="data-laptop.html"> Laptop </a></li>
 					</ul>
 				</li>
@@ -43,73 +34,70 @@
 			</ul>
 		</div>
 	</div>
+
 	<!-- slide text -->
 	<marquee behavior="" direction=""><p class="text">Silahkan Kunjungi toko kami. </p></marquee>
 	<br>
 	<!-- end slide -->
-	<div class="row">
-		<div style="width: 100%">
-			<img src="images/images (2).jpg" class="image_posisi" alt="Never Quit">
-		</div>
 
-		<div>
-			<p id="demo" class="text"></p>
-		</div>
-	</div>
-    <div class="row">
+	<div class="row">
 		<div class="column side_right">
-			<i class="text"> Silahkan Hubungi Kami</i>
-			<div class="form">
+			<p class="p">ISI DATA DENGAN LENGKAP</p>
+			<i class="text">note: Ini hanya simulasi pembelian , photo & harga yang di tampilkan tidak sesuai dengan barang yang di request</i>
+			<div class="form-pembelian">
 				<form action="#" method="POST" onSubmit="validasi()">
 					<div>
 						<label>Nama Lengkap:</label>
 						<input type="text" name="nama" id="nama" />
 					</div>
+					
 					<div>
 						<label>Email:</label>
 						<input type="email" name="email" id="email" />
 					</div>
+					
 					<div>
-						<label>Subjek:</label>
-						<textarea cols="40" rows="5" name="subjek" id="subject"></textarea>
+						<label>Produk:</label>
+						<img src="images/3.jpg" alt="" height="50">
 					</div>
+					
+					<div>
+						<label>Harga</label>
+						<input type="text" name="harga" readonly value="RP.6.500.000">
+					</div>
+					
 					<div>
 						<label>Alamat:</label>
 						<textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
 					</div>
+					
 					<div>
 						<input type="submit" value="Kirim" class="tombol">
 					</div>
 				</form>
 			</div>
-		</div><br><br><br><br>
-		<!-- load peta embed googe maps-->
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126927.95703156911!2d106.77242485265685!3d-6.197748705211061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e03dec2a2f9%3A0xc238612f0d32e93f!2sXis+Karaoke+Alexis!5e0!3m2!1sid!2sid!4v1509761077338" width="700" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
-		<!-- end load -->
-
+		</div>
 	</div>
-	<div style="height: 400px">
-	</div>
+	<div style="height: 400px"></div>
+	
 	<div class="footer">
 		<div class="pull-right"><p style="color: blue; margin-right: 10px;"> &copy; copyright. POJOKAN KANTIN LEMAH</p></div>
 	</div>
-
+	
 	<script type="text/javascript">
-	function validasi() {
-		var nama = document.getElementById("nama").value;
-		var email = document.getElementById("email").value;
-		var subject = document.getElementById("subject").value;
-		var alamat = document.getElementById("alamat").value;
-		if (nama != "" && email!="" && subject !="" && alamat !="") {
-			alert('Terima kasih telah menghubungi kami');
-			consol.log(nama);
-			consol.log(alamat);
-			consol.log(email);
-			return true;
-		}else{
-			alert('Anda harus mengisi data dengan lengkap !');
+		function validasi() {
+			var nama   = document.getElementById("nama").value;
+			var email  = document.getElementById("email").value;
+			var alamat = document.getElementById("alamat").value;
+
+			if (nama != "" && email!="" && alamat !="") {
+				alert('Terima kasih telah membeli produk kami');
+				return true;
+			}else{
+				alert('Anda harus mengisi data dengan lengkap !');
+			}
 		}
-	}
-</script>
+	</script>
+
 </body>
 </html>
